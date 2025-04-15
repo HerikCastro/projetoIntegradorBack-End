@@ -11,8 +11,8 @@ CREATE TABLE funcionarios (
     nascimento DATE NOT NULL,
     e_mail VARCHAR(45) NOT NULL UNIQUE,
     cargo VARCHAR(20) NOT NULL,
-    telefone VARCHAR(15) NOT NULL UNIQUE
-
+    telefone VARCHAR(15) NOT NULL UNIQUE,
+    senha_id VARCHAT(12) NOT NULL
 );
 
 CREATE TABLE clientes (
@@ -21,7 +21,7 @@ CREATE TABLE clientes (
     nome VARCHAR(45) NOT NULL,
     e_mail VARCHAR(45) NOT NULL UNIQUE,
     telefone VARCHAR(15) NOT NULL UNIQUE,
-    senha_cliente VARCHAR(255) NOT NULL
+    senha_id VARCHAR(12) NOT NULL
 );
 
 CREATE TABLE tipo(
